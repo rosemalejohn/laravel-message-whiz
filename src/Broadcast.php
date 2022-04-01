@@ -11,7 +11,7 @@ class Broadcast extends BaseAPI
      */
     public function sendSingleMessageBroadcast(array $data = [])
     {
-        $response = $this->client->getHttpClient()->post('/Broadcast', $data);
+        $response = $this->client->getHttpClient()->post('/3/Broadcast', $data);
 
         if ($response->successful()) {
             return $response->object()->result;
@@ -25,7 +25,7 @@ class Broadcast extends BaseAPI
      */
     public function sendTinySingleMessageBroadcast(array $data = [])
     {
-        $response = $this->client->getHttpClient()->post('/Broadcast/tiny', $data);
+        $response = $this->client->getHttpClient()->post('/3/Broadcast/tiny', $data);
 
         if ($response->successful()) {
             return $response->object()->result;

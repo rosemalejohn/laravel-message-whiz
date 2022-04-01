@@ -9,7 +9,17 @@ return [
     | URL from which API is accessed
     |
     */
-    'api_url' => env('MESSAGE_WHIZ_API_URL', 'http://sms.mmdsmart.com/api/3'),
+    'api_url' => env('MESSAGE_WHIZ_API_URL', 'http://sms.mmdsmart.com/api'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Message Whiz API Version
+    |--------------------------------------------------------------------------
+    |
+    | API version that will appended on the API URL
+    |
+    */
+    'api_version' => env('MESSAGE_WHIZ_API_VERSION', 3),
 
     /*
     |--------------------------------------------------------------------------

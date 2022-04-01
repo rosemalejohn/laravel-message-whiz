@@ -11,7 +11,7 @@ class Campaign extends BaseAPI
      */
     public function getCampaignList()
     {
-        $response = $this->client->getHttpClient()->get('/campaign');
+        $response = $this->client->getHttpClient()->get('/3/campaign');
 
         if ($response->successful()) {
             return collect($response->object()->result);
