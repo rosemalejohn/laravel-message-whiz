@@ -1,0 +1,32 @@
+{
+    "name": "rosemalejohn/laravel-message-whiz",
+    "description": "Laravel wrapper for Message Whiz API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rosemalejohn\\MessageWhiz\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "John Villacorta",
+            "email": "rosemalejohn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2.5",
+        "illuminate/contracts": "7.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rosemalejohn\\MessageWhiz\\MessageWhizServiceProvider"
+            ],
+            "aliases": {
+                "MessageWhiz": "Rosemalejohn\\MessageWhiz\\Facades\\MessageWhiz"
+            }
+        }
+    }
+}
