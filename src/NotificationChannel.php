@@ -5,7 +5,7 @@ namespace Rosemalejohn\MessageWhiz;
 use App\Facades\MessageWhiz;
 use Illuminate\Notifications\Notification;
 
-class MessageWhizChannel
+class NotificationChannel
 {
     /**
      * Send the given notification.
