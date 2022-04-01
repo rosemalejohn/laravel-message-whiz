@@ -16,6 +16,8 @@ You can publish the configurations files with:
 php artisan vendor:publish --provider="Rosemalejohn\MessageWhiz\MessageWhizServiceProvider"
 ```
 
+## Laravel Notification
+
 To use MessageWhiz on your Laravel notifications, just add `\Rosemalejohn\MessageWhiz\NotificationChannel::class` on notification's `via` method
 
 ```php
@@ -36,6 +38,10 @@ public function toSms($notifiable): array
     ];
 }
 ```
+
+## API Documentation
+
+For complete API documentation, head over to [MessageWhiz API documentation](http://api-doc.messagewhiz.com/#introduction)
 
 ## License
 
