@@ -16,6 +16,15 @@ You can publish the configurations files with:
 php artisan vendor:publish --provider="Rosemalejohn\MessageWhiz\MessageWhizServiceProvider"
 ```
 
+To use MessageWhiz on your Laravel notifications, just add this on notification's `via` method
+
+```php
+public function via($notifiable)
+{
+    return ['database', 'broadcast', \Rosemalejohn\MessageWhize\NotificationChannel::class]
+}
+```
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
